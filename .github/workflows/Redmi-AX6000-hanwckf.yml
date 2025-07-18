@@ -22,7 +22,7 @@ on:
 #    - cron: 0 16 * * *
 
 env:
-  REPO_URL: https://github.com/RavenCage/immortalwrt-mt798x
+  REPO_URL: https://github.com/thunder361/immortalwrt-mt798x
   REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: hanwckf/Redmi-AX6000/.config
@@ -32,14 +32,14 @@ env:
   PACKAGES_SH: hanwckf/Redmi-AX6000/Packages.sh
   SSH_ACTIONS: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_RELEASE: false
+  UPLOAD_RELEASE: ture
   TZ: Asia/Shanghai
   ###############改名字##############
   OPENWRT_NAME: hanwckf
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     
     steps:
     - name: 检查项目分支
